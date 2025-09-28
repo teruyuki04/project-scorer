@@ -15,7 +15,7 @@ score_h = (newness * belief) + spread
 st.write(f"👉 あなたの課題仮説スコア（H）は **{score_h} 点** です。")
 
 # ベンチマーク比較
-bench = pd.read_csv("benchmark_54.csv")  # 54社データ（H列含む）
+bench = pd.read_csv("benchmark_56.csv")  # 54社データ（H列含む）
 rank = (bench["H"] < score_h).mean() * 100
 
 # 判定ゾーン
